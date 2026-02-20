@@ -15,7 +15,9 @@ title: Spencer Pickard's Portfolio # This is what shows up in the tab of the bro
 name: Spencer Pickard
 headline: Mechanical Design Engineer | Robotics & Electromechanical Systems
 description: >- # dont remove this line. this will ignore all new lines until the next section
-With 4+ years of experience, I contribute significantly to multi-disciplinary projects from concept to production. I developed patented food-dispensing modules for the world’s first automated salad robot at Cibotica and have a proven track record in CAD modeling, DFMA, and embedded systems. I thrive on solving complex, first-principles design challenges in fast-paced startup environments.
+  With 4+ years of experience, I contribute significantly to multi-disciplinary projects from concept to production. 
+  I developed patented food-dispensing modules for the world’s first automated salad robot at Cibotica and have a proven track record in CAD modeling, DFMA, and embedded systems. 
+  I thrive on solving complex, first-principles design challenges in fast-paced startup environments.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
 profile_image: ./assets/images/profile-image/1687797302101.jpg
