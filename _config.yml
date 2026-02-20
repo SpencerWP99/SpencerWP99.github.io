@@ -20,7 +20,7 @@ I developed patented food-dispensing modules for the world’s first automated s
 I thrive on solving complex, first-principles design challenges in fast-paced startup environments.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
-profile_image: ./assets/images/profile-image/avatar.jpeg
+profile_image: ./assets/images/profile-image/1687797302101.jpg
 
 
 # Link your resume
@@ -31,9 +31,9 @@ resume-url: ./assets/resume/resume.pdf
 # Set up external links - this will show up as small icons next to your name.
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
-  linkedin: test    # https://www.linkedin.com/in/{your url slug} 
-  github: leea12    # https://github.com/{your url slug} 
-  stackoverflow: test      # https://stackoverflow.com/users/{your url slug}
+  linkedin: https://www.linkedin.com/in/spencer-pickard/
+  github:    # https://github.com/{your url slug} 
+  stackoverflow:      # https://stackoverflow.com/users/{your url slug}
   medium:            # https://medium.com/@{your url slug} 
   x-twitter:   # https://x.com/{your url slug} 
   threads:            # https://threads.net/@{your url slug} 
@@ -45,47 +45,43 @@ external-links:    # input only your own url slug. The icons with missing entrie
 
 # Skills Section - Add the list of your Skills by categories/tools. The indentation for each level needs to be precise. 
 skills:
-  - category: 3D Modeling
+  - category: 3D Modeling / CAD
     tools:
-    - Onshape
-    - Solidworks
-    - Creo
-    - Fusion 360 (Autodesk)
-    - Blender (for complex shapes or animations)
-    - Siemens NX
+    - SolidWorks Design
+    - SolidWorks Simulation (FEA/CFD)
     - Inventor (Autodesk)
-    - CATIA (Dassault Systèmes)
-  - category: Prototyping
+    - Siemens NX
+    - AutoCAD
+    - Fusion 360
+  - category: Prototyping & Manufacturing
     tools:
-    - SLA
-    - CNC
-    - FDM
-    - SLS
-    - DMLS
-    - PolyJet Printing
-    - Vacuum Casting
-    - Laser Cutting
-    - Water Jet Cutting
-    - Arduino / Raspberry Pi
-    - Breadboarding for circuit testing
-  - category: Design Standards / Practices
+    - Rapid Prototyping
+    - 3D Printing
+    - DFMA
+    - Sheet Metal Design
+    - Metalworking Experience
+    - GD&T
+    - Third-Party Machining/Manufacturing Sourcing
+  - category: Embedded Systems & Control
     tools:
-    - GD&T ASME Y14
-    - ISO fits and tolerances
-    - PLM (PTC Windchill / Arena)   
-  - category: PCB Design
+    - Python
+    - C
+    - C++
+    - Java
+    - Firmware
+    - PID/Control Algorithms
+  - category: Testing & Data Analysis
     tools:
-    - Altium Designer
-    - Altium
-    - Eagle 
-    - KiCad
-  - category: Problem Solving / Risk Management
+    - Accelerated Lifecycle Testing
+    - Structured Data-logging (Excel)
+    - Performance Analysis
+  - category: Leadership & Strategy
     tools:
-    - Root Cause Analysis (e.g., 5 Whys, Fishbone Diagram)
-    - DFMEA / PFMEA 
-    - Six Sigma methodologies
-    - Shain Red-X
-
+    - Project Management
+    - Multi-disciplinary Team Leadership
+    - Intern Supervision & Training
+    - SOP (Standard Operating Procedure) Development
+    
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
 formspree-key:   https://formspree.io/f/{8-digit key}
@@ -94,13 +90,13 @@ formspree-key:   https://formspree.io/f/{8-digit key}
 
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
 colors: # this is the basic theme
-  text: "#1a1c20"
-  border: "#ddd"
-  link: "#4a76ee"
-  highlight: "#0c0cf2"
-  background: "#ffffff"
-  light_background: "#f3f5fb"
-
+  text: "#2c3333"
+  border: "#e0f2ef"
+  link: "#40b3a2"
+  highlight: "#2a9d8f"
+  background: "#f7fbfa"
+  light_background: "#f0f9f7"
+  
 # A few examples. 
 basic theme:
   text: "#1a1c20"
