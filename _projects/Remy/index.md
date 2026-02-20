@@ -10,17 +10,11 @@ skills:
   - Control Algorithms
   - DFMA
   - FEA/CFD Simulation
-main-image: remy.jpg
+main-image: /remy.jpg
 ---
 
 ## Remy Project Overview
-Remy is an automated salad-and-bowl production robot designed to solve the challenges of speed, consistency, and sanitation in commercial kitchens. As a core member of the engineering team at Cibotica, I led the mechanical design and development of the four primary modules that drive the system: a magnetic conveyor, a bowl denester, a vibration-based ingredient dispenser, and a synchronized bowl elevator. My work involved taking these subsystems from initial first-principles sketches through to pilot-ready hardware.
-
-<iframe src="https://cibotica.com/" width="100%" height="500px" style="border:1px solid #eee; border-radius: 8px;" allowfullscreen></iframe>
-
-<br>
-
-{% include image-gallery.html images="remy.jpg" height="400" %}
+Remy is an automated salad-and-bowl production robot designed to solve the challenges of speed, consistency, and sanitation in commercial kitchens. As a core member of the engineering team at [Cibotica](https://cibotica.com), I led the mechanical design and development of the four primary modules that drive the system: a magnetic conveyor, a bowl denester, a vibration-based ingredient dispenser, and a synchronized bowl elevator. My work involved taking these subsystems from initial first-principles sketches through to pilot-ready hardware.
 
 ---
 
@@ -34,30 +28,36 @@ My involvement spanned the full product development lifecycle, moving from high-
 
 ---
 
-## Core System Modules
-
-### Magnetic Conveyor System
+## Magnetic Conveyor System
 To meet strict food safety standards, I designed a seamless, wipeable stainless steel floor that houses a hidden magnetic conveying system. I developed a unique "Pull-Repel" cycle using electromagnets and H-bridge PCB revisions to index 3D-printed trays across the surface without any mechanical penetrations. 
 
 **Key Innovation:** To ensure serviceability, I integrated a lift-assist frame supported by calibrated gas springs, allowing the entire internal assembly to be lifted 1.5ft for easy maintenance access.
 
 {% include image-gallery.html images="conveyor.jpg" height="400" %}
 
-### Bowl Denester
+---
+
+## Bowl Denester
 I engineered a linearly-actuated bowl dispenser that utilizes a "ratchet-and-pawl" logic to separate nested bowls. The system features unidirectional spring fingers and a force-actuated gate with adjustable spring tension. 
 
 **Key Innovation:** To maintain consistent performance regardless of stack height, I designed eccentric cams that isolate the weight of the upper bowl stack, ensuring the dispensing mechanism only interacts with a constant load of ~6 bowls.
 
 {% include image-gallery.html images="bowldispenser.jpg" height="400" %}
 
-### Ingredient Dispenser (Patented)
+---
+
+## Ingredient Dispenser (Patented)
 I developed a vibration-based dispensing module capable of handling a wide variety of food textures. The system uses a Horizontal Vibration Module (HVM) to convert rotational motor motion into a pendulum-style oscillation via an eccentric cam and linear rails.
 
 **Key Innovation:** To achieve high-accuracy portioning, I designed a "floating" weight gate isolated from the vibration source. This allows integrated loadcells to measure ingredient mass in real-time without interference from the horizontal oscillation.
 
+Patent: [WO2024243703 - SYSTEMS, METHODS, AND DEVICES FOR FOOD DISPENSING](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2024243703&_cid=P21-M66ZFZ-51674-1)
+
 {% include image-gallery.html images="dispenser.jpg" height="400" %}
 
-### Synchronized Bowl Elevator
+---
+
+## Synchronized Bowl Elevator
 To deliver finished bowls to the operator, I designed a dual-column chain-driven elevator. This system features mirrored kinematics where two independent columns are synchronized via proximity sensors and homing algorithms. 
 
 **Key Innovation:** I implemented a 1:4 ratio gear train on NEMA stepper motors to provide the necessary torque for lifting high-capacity bowls while maintaining a slim mechanical footprint.
