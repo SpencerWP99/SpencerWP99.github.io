@@ -1,30 +1,32 @@
 ---
 layout: post
 title: Remy - Automated Salad Assembly Robot
-description: A complex electro-mechanical system designed to automate fresh food production. Remy utilizes four primary mechatronic modules to handle bowls and dispense ingredients with high precision and sanitation.
+description: A complex electro-mechanical system designed to automate salad production and solve the challenges of the current day restaurant industry
 skills: 
   - Mechatronics System Design
-  - Mechanism Architecture
+  - Product Design Cycle
   - Rapid Prototyping
-  - Electromagnetics
+  - Lifecycle Testing
+  - Data Analysis
   - Control Algorithms
   - DFMA
-  - FEA/CFD Simulation
+  - Leadership/Responsability
 main-image: /remy.jpg
 ---
 
 ## Remy Project Overview
-Remy is an automated salad-and-bowl production robot designed to solve the challenges of speed, consistency, and sanitation in commercial kitchens. As a core member of the engineering team at [Cibotica](https://cibotica.com), I led the mechanical design and development of the four primary modules that drive the system: a magnetic conveyor, a bowl denester, a vibration-based ingredient dispenser, and a synchronized bowl elevator. My work involved taking these subsystems from initial first-principles sketches through to pilot-ready hardware.
+Remy is an automated salad-and-bowl production robot designed to solve the challenges of speed, consistency, and sanitation in commercial kitchens. As a core member of the engineering team at [Cibotica](https://cibotica.com), I led/contributed to the mechanical design and development of Remy, primarily the four core modules that drive the system: the vibration-based ingredient dispensers, a magnetic conveyor, a bowl denester, and a synchronized bowl elevator. My work involved taking these subsystems from initial first-principles sketches through to pilot-ready hardware.
 
 {% include youtube-video.html id="EaUrFaaEMco" autoplay="false" width="100%" %}
 
 ---
 
-## Remy Lifecycle: From Alpha to Beta
-My involvement spanned the full product development lifecycle, moving from high-risk experimental R&D to a polished, pilot-ready product.
+## Remy Lifecycle: From P.O.C to Pilot
+My involvement spanned the full product development lifecycle, moving from experimental R&D prototyping to a polished, pilot-ready product.
 
-* **Alpha Phase (Concept & Proof of Concept):** I focused on rapid iteration and risk mitigation. During this stage, I utilized 3D printing and off-the-shelf components to validate the core "physics" of the robot—specifically testing the feasibility of moving magnetic trays through solid stainless steel.
-* **Beta Phase (Refinement & Pilot Production):** I transitioned the designs into manufacturable units. This involved rigorous **DFMA** (Design for Manufacturing and Assembly) to reduce part counts, sourcing CNC and sheet-metal components from external vendors, and implementing high-level feedback loops in the firmware.
+* **Proof of Concept (P.O.C.):** Very early stage concept version of the robot, a "skeleton" model made from 80-20 extrusion for the frame used to quickly prototype various revisions of each core module + test the concept of a salad-assembly robot, I help with finalizing the concepts through vigorous testing and initial data-logging
+* **Alpha Phase/Pre-Pilot:** The first "real" robot; Alpha was designed as the pre-pilot model used for validating core functionality and gauging the restaurant industry's interest in the product. During this stage, I contributed to: finalizing the design of the ingredient dispenser containers and vibration module, and the bowl denester; assembling and mounting the structural framework to the main refrigeration unit; and developing the core modules through rapid prototyping and testing
+* **Beta Phase/Pilot Unit:** The pilot unit set to launch in the Vancouver based restaurant Food Republic; the unit would be a case study to prove the sales metrics of the unit and gain outreach for Cibotica. As one of the lead engineers, I lead the redesign from the pre-pilot to production for the ingredient dispenser, the bowl denester, and the bowl elevator + worked with the CTO to redesign the magnetic conveyor and the high-level architecture of Remy. On top of the design cycle, I also contributed to the assembly of the structural architecture and all modules, tested all systems for lifecycle and failure cases + rigorous ingredient testing to prove the modules's agnostic ingredient dispensing and the optimized speed/accuracy metrics of each ingredient, and wrote all the documentation for the Beta unit. More information on the Beta unit specifics can be read below.
 
 {% include image-gallery.html images="teampic.jpg" height="400" %}
 
@@ -32,9 +34,7 @@ My involvement spanned the full product development lifecycle, moving from high-
 
 ## Ingredient Dispenser (Patented)
 ### Lead Designer
-I developed a vibration-based dispensing module capable of handling a wide variety of food textures. The system uses a Horizontal Vibration Module (HVM) to convert rotational motor motion into a pendulum-style oscillation via an eccentric cam and linear rails.
-
-**Key Innovation:** To achieve high-accuracy portioning, I designed a "floating" weight gate isolated from the vibration source. This allows integrated loadcells to measure ingredient mass in real-time without interference from the horizontal oscillation.
+A modular assembly designed to dispense any type of ingredient into a bowl at 3-5% accuracy within 15-30 seconds; uses eccentric rotation to create linear motion to vibrate the container at various frequencies based on the speed of output from the weight gate device. I designed the vibration module, the weight gate device, the ingredient containers, and the secondary systems (container weighting system, bowl detection system); the device was designed to be modular and following DFMA principles so third-party technicians could easily swap dispensers on-site without blocking restaurants during operation + each systems was designed to meet NSF/ANSI 2023 food safety standards.
 
 Patent: [WO2024243703 - SYSTEMS, METHODS, AND DEVICES FOR FOOD DISPENSING](https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2024243703&_cid=P21-M66ZFZ-51674-1)
 
@@ -44,9 +44,7 @@ Patent: [WO2024243703 - SYSTEMS, METHODS, AND DEVICES FOR FOOD DISPENSING](https
 
 ## Bowl Denester
 ### Lead Designer
-I engineered a linearly-actuated bowl dispenser that utilizes a "ratchet-and-pawl" logic to separate nested bowls. The system features unidirectional spring fingers and a force-actuated gate with adjustable spring tension. 
-
-**Key Innovation:** To maintain consistent performance regardless of stack height, I designed eccentric cams that isolate the weight of the upper bowl stack, ensuring the dispensing mechanism only interacts with a constant load of ~6 bowls.
+The bowl denester dispenses salad bowls onto the magnetic conveyor trays with high precision and accuracy with several backup systems to notify operators of minor issues to prevent system failure. I engineered a linearly-actuated bowl denester that utilizes "ratchet-and-pawl" style fingers to separate nested bowls; the denester is the first action of the system, and failure to denest a bowl would cause every other system to fail, so several secondary modules are designed to prevent edgecases and human error. A bowl catch-lock device was added to prevent bowls from bypassing the force-actuated gate holding the bowl stack and sensors to detect the remaining number of bowls in the stack + to measure the bowl position relative to the conveyor trays to determine if the bowl became misaligned during the final freefaall.
 
 {% include image-gallery.html images="bowldispenser.jpg" height="400" %}
 
@@ -54,25 +52,21 @@ I engineered a linearly-actuated bowl dispenser that utilizes a "ratchet-and-paw
 
 ## Bowl Elevator
 ### Lead Designer
-To deliver finished bowls to the operator, I designed a dual-column chain-driven elevator. This system features mirrored kinematics where two independent columns are synchronized via proximity sensors and homing algorithms. 
-
-**Key Innovation:** I implemented a 1:4 ratio gear train on NEMA stepper motors to provide the necessary torque for lifting high-capacity bowls while maintaining a slim mechanical footprint.
+A dual-column chain-driven elevator with mirrored kinematics to lift salads from the conveyor tray to the top of the device for operators to finish the garnish and serve; two independent columns with set of arms to grab the bowls, synchronized via proximity sensors and homing algorithms. I designed the drivetrain and chain w/ bowl arms and the sensors for synchronization, bowl detection, and error detection.
 
 {% include image-gallery.html images="bowlelevator.jpg" height="400" %}
 
 ---
 
 ## Magnetic Conveyor System
-To meet strict food safety standards, I designed a seamless, wipeable stainless steel floor that houses a hidden magnetic conveying system. I developed a unique "Pull-Repel" cycle using electromagnets and H-bridge PCB revisions to index 3D-printed trays across the surface without any mechanical penetrations. 
-
-**Key Innovation:** To ensure serviceability, I integrated a lift-assist frame supported by calibrated gas springs, allowing the entire internal assembly to be lifted 1.5ft for easy maintenance access.
+To meet strict food safety standards and reduce the cleaning time of the robot, a magnetic conveyor was designed to move bowl trays from module to module seamlessly while allowing the bowls to be quickly removed and washed; the system is design to move bowls incrementaly in a square pattern using electromagnets on hidden rails. I contributed to designing the proof of concept for the rail system and bowl trays, and aided with resolves several issues during testing, such as finding a method to increase the electromagnetic force during the forward motion without incedentally increasing the permanent magnet force during the backwards motion.
 
 {% include image-gallery.html images="conveyor.jpg" height="400" %}
 
 ---
 
 ## Engineering Knowledge Base & Documentation
-To support the transition from R&D to pilot production, I architected and authored a comprehensive central documentation database. This was a critical business-focused initiative to ensure that as the company scaled, engineering knowledge was preserved and assembly could be offloaded to manufacturing technicians.
+To support the transition from R&D to pilot production, I architected and authored the comprehensive documentation database. This was a critical business-focused initiative to ensure that as the company scaled, engineering knowledge was preserved and assembly could be offloaded to manufacturing technicians.
 
 **Key resources:**
 
