@@ -1,114 +1,70 @@
 ---
 layout: post
-title: Super Heavy Booster Catch (Demo Only)
-description:  (I have never been employed by / affiliated with SpaceX. This is for demo use only) 
-    Developing the Super Heavy booster catch project involves designing a robust launch tower with "chopstick" arms, advanced control systems for precise booster alignment, and integrating sophisticated software for real-time trajectory adjustments and structural engineering to handle immense forces.
+title: Remy - Automated Salad Assembly Robot
+description: A complex electro-mechanical system designed to automate fresh food production. Remy utilizes four primary mechatronic modules to handle bowls and dispense ingredients with high precision and sanitation.
 skills: 
-  - Structural analysis
-  - Aerodynamic design
-  - Propulsion system integration
-  - Control Algorithem 
-  - Welding
-  - Metal forming
-  - Thermal simulation
-
-main-image: /project2.jpg
+  - Mechatronics System Design
+  - Mechanism Architecture
+  - Rapid Prototyping
+  - Electromagnetics
+  - Control Algorithms
+  - DFMA
+  - FEA/CFD Simulation
+main-image: remy.jpg
 ---
 
----
-# Header 1 
-Used for the title (already generated automatically at the top)
-## Header 2  
-Use this for the header of each section
-### Header 3 
-Use this to have subsection if needed
+## Remy Project Overview
+Remy is an automated salad-and-bowl production robot designed to solve the challenges of speed, consistency, and sanitation in commercial kitchens. As a core member of the engineering team at Cibotica, I led the mechanical design and development of the four primary modules that drive the system: a magnetic conveyor, a bowl denester, a vibration-based ingredient dispenser, and a synchronized bowl elevator. My work involved taking these subsystems from initial first-principles sketches through to pilot-ready hardware.
 
-
-## Embedding images 
-### External images
-{% include image-gallery.html images="https://live.staticflickr.com/65535/52821641477_d397e56bc4_k.jpg, https://live.staticflickr.com/65535/52822650673_f074b20d90_k.jpg" height="400"%}
-<span style="font-size: 10px">"Starship Test Flight Mission" from https://www.flickr.com/photos/spacex/52821641477/</span>  
-You can put in multiple entries. All images will be at a fixed height in the same row. With smaller window, they will switch to columns.  
-
-### Embeed images
-{% include image-gallery.html images="project2.jpg" height="400" %} 
-place the images in project folder/images then update the file path.   
-
-
-## Embedding youtube video
-The second video has the autoplay on. copy and paste the 11-digit id found in the url link. <br>
-*Example* : https://www.youtube.com/watch?v={**MhVw-MHGv4s**}&ab_channel=engineerguy
-{% include youtube-video.html id="MhVw-MHGv4s" autoplay= "false"%}
-{% include youtube-video.html id="XGC31lmdS6s" autoplay = "true" %}
-
-you can also set up custom size by specifying the width (the aspect ratio has been set to 16/9). The default size is 560 pixels x 315 pixels.  
-
-The width of the video below. Regardless of initial width, all the videos is responsive and will fit within the smaller screen.
-{% include youtube-video.html id="tGCdLEQzde0" autoplay = "false" width= "900px" %}  
+<iframe src="https://cibotica.com/" width="100%" height="500px" style="border:1px solid #eee; border-radius: 8px;" allowfullscreen></iframe>
 
 <br>
 
-## Adding a hozontal line
+{% include image-gallery.html images="remy.jpg" height="400" %}
+
 ---
 
-## Starting a new line
-leave two spaces "  " at the end or enter <br>
+## Remy Lifecycle: From Alpha to Beta
+My involvement spanned the full product development lifecycle, moving from high-risk experimental R&D to a polished, pilot-ready product.
 
-## Adding bold text
-this is how you input **bold text**
+* **Alpha Phase (Concept & Proof of Concept):** I focused on rapid iteration and risk mitigation. During this stage, I utilized 3D printing and off-the-shelf components to validate the core "physics" of the robot—specifically testing the feasibility of moving magnetic trays through solid stainless steel.
+* **Beta Phase (Refinement & Pilot Production):** I transitioned the designs into manufacturable units. This involved rigorous **DFMA** (Design for Manufacturing and Assembly) to reduce part counts, sourcing CNC and sheet-metal components from external vendors, and implementing high-level feedback loops in the firmware.
 
-## Adding italic text
-Italicized text is the *cat's meow*.
+{% include youtube-video.html id="EaUrFaaEMco" autoplay="false" width="100%" %}
 
-## Adding ordered list
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
+---
 
-## Adding unordered list
-- First item
-- Second item
-- Third item
-- Fourth item
+## Core System Modules
 
-## Adding code block
-```ruby
-def hello_world
-  puts "Hello, World!"
-end
-```
+### Magnetic Conveyor System
+To meet strict food safety standards, I designed a seamless, wipeable stainless steel floor that houses a hidden magnetic conveying system. I developed a unique "Pull-Repel" cycle using electromagnets and H-bridge PCB revisions to index 3D-printed trays across the surface without any mechanical penetrations. 
 
-```python
-def start()
-  print("time to start!")
-```
+**Key Innovation:** To ensure serviceability, I integrated a lift-assist frame supported by calibrated gas springs, allowing the entire internal assembly to be lifted 1.5ft for easy maintenance access.
 
-```javascript
-let x = 1;
-if (x === 1) {
-  let x = 2;
-  console.log(x);
-}
-console.log(x);
+{% include image-gallery.html images="conveyor.jpg" height="400" %}
 
-```
+### Bowl Denester
+I engineered a linearly-actuated bowl dispenser that utilizes a "ratchet-and-pawl" logic to separate nested bowls. The system features unidirectional spring fingers and a force-actuated gate with adjustable spring tension. 
 
-## Adding external links
-[Wikipedia](https://en.wikipedia.org)
+**Key Innovation:** To maintain consistent performance regardless of stack height, I designed eccentric cams that isolate the weight of the upper bowl stack, ensuring the dispensing mechanism only interacts with a constant load of ~6 bowls.
 
+{% include image-gallery.html images="bowldispenser.jpg" height="400" %}
 
-## Adding block quote
-> A blockquote would look great if you need to highlight something
+### Ingredient Dispenser (Patented)
+I developed a vibration-based dispensing module capable of handling a wide variety of food textures. The system uses a Horizontal Vibration Module (HVM) to convert rotational motor motion into a pendulum-style oscillation via an eccentric cam and linear rails.
 
+**Key Innovation:** To achieve high-accuracy portioning, I designed a "floating" weight gate isolated from the vibration source. This allows integrated loadcells to measure ingredient mass in real-time without interference from the horizontal oscillation.
 
-## Adding table 
+{% include image-gallery.html images="dispenser.jpg" height="400" %}
 
-| Header 1 | Header 2 |
-|----------|----------|
-| Row 1, Col 1 | Row 1, Col 2 |
-| Row 2, Col 1 | Row 2, Col 2 |
+### Synchronized Bowl Elevator
+To deliver finished bowls to the operator, I designed a dual-column chain-driven elevator. This system features mirrored kinematics where two independent columns are synchronized via proximity sensors and homing algorithms. 
 
-make sure to leave aline betwen the table and the header
+**Key Innovation:** I implemented a 1:4 ratio gear train on NEMA stepper motors to provide the necessary torque for lifting high-capacity bowls while maintaining a slim mechanical footprint.
 
+{% include image-gallery.html images="bowlelevator.jpg" height="400" %}
 
+---
+
+## System Integration & Testing
+Beyond hardware design, I developed the assembly and testing procedures for every subsystem. I created structured data-logging tools in Excel to track lifecycle testing and performance metrics, allowing the team to identify and mitigate design risks before deploying the robot to pilot locations.
