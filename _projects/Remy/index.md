@@ -30,7 +30,8 @@ My involvement spanned the full product development lifecycle, moving from high-
 
 ---
 
-## Ingredient Dispenser (Patented) - Lead Designer
+## Ingredient Dispenser (Patented)
+### Lead Designer
 I developed a vibration-based dispensing module capable of handling a wide variety of food textures. The system uses a Horizontal Vibration Module (HVM) to convert rotational motor motion into a pendulum-style oscillation via an eccentric cam and linear rails.
 
 **Key Innovation:** To achieve high-accuracy portioning, I designed a "floating" weight gate isolated from the vibration source. This allows integrated loadcells to measure ingredient mass in real-time without interference from the horizontal oscillation.
@@ -41,7 +42,8 @@ Patent: [WO2024243703 - SYSTEMS, METHODS, AND DEVICES FOR FOOD DISPENSING](https
 
 --
 
-## Bowl Denester - Lead Designer
+## Bowl Denester
+### Lead Designer
 I engineered a linearly-actuated bowl dispenser that utilizes a "ratchet-and-pawl" logic to separate nested bowls. The system features unidirectional spring fingers and a force-actuated gate with adjustable spring tension. 
 
 **Key Innovation:** To maintain consistent performance regardless of stack height, I designed eccentric cams that isolate the weight of the upper bowl stack, ensuring the dispensing mechanism only interacts with a constant load of ~6 bowls.
@@ -50,7 +52,8 @@ I engineered a linearly-actuated bowl dispenser that utilizes a "ratchet-and-paw
 
 ---
 
-## Bowl Elevator - Lead Designer
+## Bowl Elevator
+### Lead Designer
 To deliver finished bowls to the operator, I designed a dual-column chain-driven elevator. This system features mirrored kinematics where two independent columns are synchronized via proximity sensors and homing algorithms. 
 
 **Key Innovation:** I implemented a 1:4 ratio gear train on NEMA stepper motors to provide the necessary torque for lifting high-capacity bowls while maintaining a slim mechanical footprint.
@@ -68,5 +71,14 @@ To meet strict food safety standards, I designed a seamless, wipeable stainless 
 
 ---
 
-## System Integration & Testing
-Beyond hardware design, I developed the assembly and testing procedures for every subsystem. I created structured data-logging tools in Excel to track lifecycle testing and performance metrics, allowing the team to identify and mitigate design risks before deploying the robot to pilot locations.
+## Engineering Knowledge Base & Documentation
+To support the transition from R&D to pilot production, I architected and authored a comprehensive central documentation database. This was a critical business-focused initiative to ensure that as the company scaled, engineering knowledge was preserved and assembly could be offloaded to manufacturing technicians.
+
+**Key resources:**
+
+* **ALTT (Accelerated Lifecycle Testing):** Authored detailed testing plans, excel data-logging tools and findings to provide data-driven reliability projections for every mechanical module.
+* **Assembly Guides & QC Testing:** Created step-by-step visual assembly manuals and Quality Control checklists to ensure consistency across multiple robot builds.
+* **Troubleshooting Guides:** Developed logic-based troubleshooting trees to minimize downtime during testing and operation for operators/technicians.
+* **Ingredient Testing:** Developed Excel files to analyze data measurements from ingredient testing to output suggestions for optimizing the ingredient dispenser's PD controller.
+
+{% include image-gallery.html images="documentation.jpg" height="400" %}
