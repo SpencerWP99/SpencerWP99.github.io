@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Portable Handheld Cloud Chamber
+title: Portable Handheld Cloud Chamber [University Project]
 description: A compact, battery-powered particle detector designed for educational demonstrations, utilizing thermoelectric cooling and custom PCB control to visualize ionizing radiation in real-time.
 weight: 4
 skills: 
