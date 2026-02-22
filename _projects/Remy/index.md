@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1. Automated Salad Assembly Robot
+title: Automated Salad Assembly Robot
 description: A complex electro-mechanical system designed to automate salad production and solve the challenges of the current day restaurant industry
 weight: 1
 skills: 
