@@ -8,7 +8,7 @@ skills:
   - Control Logic & State Machines
   - Signal Processing (ADC)
   - Motion Control Algorithms
-main-image: sortmachine.jpg
+main-image: /sortmachine.jpg
 ---
 
 ## Project Overview
