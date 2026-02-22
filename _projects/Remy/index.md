@@ -2,6 +2,7 @@
 layout: post
 title: Remy - Automated Salad Assembly Robot
 description: A complex electro-mechanical system designed to automate salad production and solve the challenges of the current day restaurant industry
+weight: 1
 skills: 
   - Mechatronics System Design
   - Product Design Cycle
