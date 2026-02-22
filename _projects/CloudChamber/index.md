@@ -8,7 +8,7 @@ skills:
   - Thermoelectric Cooling (TEC)
   - PCB Design (Altium/KiCad)
   - Power Electronics
-main-image: cloudchamber.jpg
+main-image: /cloudmachine.jpg
 ---
 
 ## Project Overview
