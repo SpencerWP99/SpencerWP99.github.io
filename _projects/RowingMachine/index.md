@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Fly Lever: Air-Damped Resistance Trainer [Capstone 2/Product Design Course Project]
+title: The Fly Lever - Air-Damped Resistance Trainer [Capstone 2/Product Design Course Project]
 description: A compact, cost-effective athletic assessment tool designed to replicate the dynamic resistance profile of a Concept 2 Dyno using mechanical advantage and fluid drag modeling.
 weight: 5
 skills: 
