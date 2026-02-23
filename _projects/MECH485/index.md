@@ -1,6 +1,6 @@
 ---
 layout: post
-title: High-Speed Mechatronic Sorting System [University Project]
+title: High-Speed Mechatronic Sorting System [University Project Course]
 description: A real-time control and classification system developed to automate the high-speed sorting of multi-material cylinders using an ATmega2560 and custom C-based firmware.
 weight: 3
 skills: 
